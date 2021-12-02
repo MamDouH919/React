@@ -5,11 +5,9 @@ import TodoList from './components/TodoList';
 const App = ()=> {
   const [input , setInput] = useState([]);
   const [todos,setTodo] = useState([]);
-  const [editTodo,seteditTodo] =useState(false);
-  const [viewMode,setviewMode] =useState();
-  const [editMode,seteditMode] =useState();
-  // const viewMode = {display:"none"};
-  //   const editMode = {display:"none"}
+  const [editTodo , seteditTodo] = useState([]);
+
+
   return (
     <>
       <div className='cont'>
@@ -26,10 +24,7 @@ const App = ()=> {
         setTodo={setTodo}
         editTodo={editTodo}
         seteditTodo={seteditTodo}
-        viewMode={viewMode}
-        editMode={editMode}
-        setviewMode={setviewMode}
-        seteditMode={seteditMode}
+
         />
       </div>
     </>
